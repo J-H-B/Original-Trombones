@@ -1,5 +1,71 @@
 html,body{
 	margin: 0;
 	padding: 0;
-	
+	background-color: #eee;
+}
+
+#header{
+	margin-top: 2%;
+}
+
+.container{
+	/*margin: auto;*/
+}
+
+#header-img{
+	width: 100%;
+	height: 100%;
+	/*max-width: 300px;*/
+	display: flex;
+	margin: auto;
+}
+
+#nav-bar{
+	text-align: center;
+}
+
+li{
+	display: block;
+	list-style: none;
+	margin-bottom: 1%;
+}
+
+li>a{
+	text-decoration: none;
+	font-size: 1.5em;
+	color: #000;
+}
+
+h2{
+	font-weight: bold;
+	font-size: 1.5em;
+	font-family: 'Lato', sans-serif;
+	color: #2D4543;
+}
+
+#email{
+	width: 60%;
+	margin-bottom: 3.5%;
+	height: 20px;
+	padding-left: 1%;
+}
+
+#submit{
+	background-color: #FFC626;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+#features{
+	margin-top: -1%;
+	text-align: center;
+}
+
+h3{
+	font-size: 1.6em;
+	margin-top: 13%;
+}
+
+p{
+	padding: 1.3%;
 }

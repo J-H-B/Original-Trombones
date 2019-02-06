@@ -9,11 +9,11 @@
 	<!-- HEADER -->
 	<header id = "header">
 		<div id = "container" >
-			<div class="row">			
-				<div class = "col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			<div class="row center-xs end-sm end-md end-lg middle-xs middle-sm middle-md middle-lg ">			
+				<div class = "col-xs-12 col-sm-2 col-md-2 col-lg-2" id = "header-div">
 					<img src = "images/original_trombones.png" id = "header-img" alt = "logo"/>
 				</div>
-				<div class = "col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<div class = "col-xs-12 col-sm-10 col-md-10 col-lg-10 ">
 					<nav id = "nav-bar">
 						<ul>
 							<li><a class = "nav-link" href = "#features">Features</a></li>
@@ -25,20 +25,31 @@
 			</div>
 		</div>
 	</header>
-	<main>
+
+	<!-- DIVIDER -->
+	<div class="container" id = "spacing"></div>
+
+	<!-- SUBHEADER -->
+	<section id = "subheader-1">
 		<div class="container">
 			<div class="row center-xs center-sm center-md center-lg">
 				<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-					<section id = "getstarted">
+					<div id = "getstarted">
 						<h2>Handcrafted, Home-made Masterpieces</h2>
 						<form id = "form" action = "https://www.freecodecamp.com/email-submit" method = "post">
 							<input id = "email" type = "email" placeholder="Enter your Email Address" required>
 							<br>
 							<input type="submit" value = "GET STARTED" id = "submit" name = "submit">
 						</form>
-					</section>
+					</div>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<!-- MAIN SECTION  -->
+	<main id = "main">
+		<div class="container">
 			<div class="row center-xs center-sm center-md center-lg">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<section id = "features">
@@ -70,7 +81,7 @@
 					<section id = "pricing">
 						<div id="tenor_trombone">
 							<h3>Tenor Trombone</h3>
-							
+
 						</div>
 						<div id="bass_trombone">
 							<h3>Bass Trombone</h3>
@@ -82,8 +93,8 @@
 				</div>
 			</div>
 		</div>
-	</main>
-	<footer></footer>
-	<script type="text/javascript" src = "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" ></script>
+	</main> 
+	<!-- <footer></footer>
+	<script type="text/javascript" src = "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" ></script>  -->
 </body>
 </html>

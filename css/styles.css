@@ -6,11 +6,17 @@ html,body{
 }
 
 body{
+	width: 100%;
 	margin: auto;
 }
 
 .container{
-	margin:auto;
+	width: 100%;
+}
+
+.row{
+	margin: 0;
+	padding: 0;
 }
 
 img{
@@ -20,19 +26,24 @@ img{
 /*HEADER*/
 #header{
 	background: #eee;
+	padding-top: 10px;
 	margin-bottom: 30px;
 	position: fixed;
-	top: 10px;
-	height: 30px;
+	height: 40px;
 	width: 100%;	
 }
 
-#header-div{
-	width: 20%;
+#header .row{
+	width: 100%;
+	margin: 0;
 }
 
 #header-img{
 	width: 300px;
+}
+
+.div-nav{
+	padding: 0;
 }
 
 #nav-bar li{
@@ -45,11 +56,19 @@ img{
 	color: #000;
 }
 
+/*SPACING*/
+#spacing{
+	padding: 0;
+	margin-top: 0;
+	height: 80px;
+	background: #eee;
+}
+
 /*SUBHEADER*/
-#subheader-1{
+#subheader{
 	width: 100%;
 	padding-top: 35px;
-	margin-bottom: 50px;
+	margin-bottom: 60px;
 }
 
 #email{
@@ -66,38 +85,158 @@ img{
 	font-size: 16px;
 }
 
-/*SPACING*/
-#spacing{
-	height: 85px;
+/*MAIN*/
+.fa-fire{
+	padding-right: 7px;
 }
 
-/*MAIN*/
+.center-alignment .row{
+	margin-left: auto;
+}
+
 #main h3{
 	font-size: 1.6em;
 	margin-bottom: 0;
-}
-
-#main p{
-	text-align: justify;
-	margin-top: 0;
-	padding: 0 15px;
 }
 
 #features > div{
 	margin-bottom: 20px;
 }
 
+#features i{
+	font-size: 50px;
+	color: darkorange;
+}
+
+/*MAIN VIDEO*/
+#video{
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+
+#video iframe{
+	width: 80%;
+	height: 400px;
+	width: 100vw;
+}
+
+/*PRICING*/
+#pricing{
+	margin: auto;
+	margin-bottom: 20px;
+}
+.pricing-div{
+	padding: 0px 0px;
+	margin-bottom: 20px;
+	border: 1px solid #000;
+}
+
+.pricing-div h4{
+	background: #ddd;
+	margin: 0;
+	text-transform: uppercase;
+	padding: 18px 0;
+	font-size: 1.1em;
+}
+
+.pricing-div p{
+	text-align: center;
+}
+
+.pricing-div input{
+	background: #f1c40f;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	margin-bottom: 20px;
+	font-size: 14px;	
+}
+
+/*FOOTER*/
+footer{
+	width: 100%;
+	background: #ddd;
+	margin: 0;
+	padding: 0;
+}
+
+footer .row{
+	margin: 0;
+}
+
+footer li{
+	list-style: none;
+	display: inline;
+	margin-right: 20px;
+}
+
+footer li a{
+	text-decoration: none;
+	color: #000;
+}
 
 /*MEDIA QUERIES*/
-@media(min-width: 601px){
-	/*HEADER*/
-	#nav-bar li{
-		display: inline;
-		padding-right: 50px;
+@media(min-width: 1024px){
+	/*FEATURES*/
+	#features-update{
+		padding: 0;
 	}
-	/*SUBHEADER*/
-	#subheader-1{
-	padding-top: 0px;
+}
+
+@media only screen and (min-width: 950px ){
+	/*PRICING*/
+	#pricing{
+		width: 80%;
+	}
+	.pricing-div{
+		max-width: 240px;
+	}
+}
+
+@media only screen and (min-width: 801px) and (max-width: 949px){
+	/*PRICING*/
+	.pricing-div{
+		max-width: 240px;
+	}
+}
+
+@media screen and (min-width: 768px){
+	/*MAIN*/
+	#main h3{
+		float: left;
+	}
+	.main-p{
+		clear: both;
+		text-align: left;
+		padding: 0;
+	}
+}
+
+
+@media(max-width: 767px){
+	/*HEADER*/
+	#header{
+		padding-bottom: 50px;
+	}
+
+	/*MAIN*/
+	#main p{
+	text-align: center;
+	margin-top: 0;
+	padding: 0 7px;
+	}
+
+	/*DIVIDER*/
+	#spacing{
+		height: 110px;
+		background: #eee;
+	}
+}
+
+@media only screen and (max-width: 800px) and (min-width: 599px) {
+	/*PRICING*/
+	.pricing-div{
+		max-width: 300px;
+		margin: 0 32% 20px 32%;
 	}
 }
 
@@ -106,113 +245,49 @@ img{
 	#header{
 		padding-bottom: 100px;
 	}
-}
-
-@media(max-width: 400px){
-	/*SUBHEADER*/
-	#subheader-1{
-		
+	
+	/*MAIN*/
+	#main p{
+		padding: 5px;
 	}
 }
 
-
-/*#header{
-	padding-top: 2%;
-	position: fixed;
-	margin-bottom: 30%;
-	background-color: #eee;
+@media only screen and (max-width: 598px) and (min-width: 400px) {
+	/*PRICING*/
+	.pricing-div{
+		flex: 0 0 300px;
+		margin: 0 auto 30px auto;
+	}
 }
 
-.container{
-	margin: auto;
+@media(min-width: 599px){
+	/*HEADER*/
+	#header{
+		height: 50px;
+	}
+	/*DIVIDER*/
+	#spacing{
+		height: 70px;
+		background: #eee;
+	}
+	#nav-bar li{
+		display: inline;
+		padding-right: 50px;
+	}
+	/*SUBHEADER*/
+	#subheader{
+		padding-top: 0px;
+	}
+
+	/*FOOTER*/
+	footer p{
+		padding-right: 20px;
+	}
 }
 
-#header-img{
-	width: 100%;
-	max-width: 350px;
-	margin-right: auto;
-	margin-left: auto;
-	
+@media(min-width: 400px){
+	/*MAIN*/
+	#video iframe{
+		width: 100%;
+	}
 }
-
-#nav-bar{
-	text-align: center;
-}
-
-li{
-	display: block;
-	list-style: none;
-	margin-bottom: 1%;
-}
-
-li>a{
-	text-decoration: none;
-	font-size: 1.5em;
-	color: #000;
-}
-
-h2{
-	font-weight: bold;
-	font-size: 1.5em;
-	font-family: 'Lato', sans-serif;
-	color: #2D4543;
-}
-
-#email{
-	width: 60%;
-	margin-bottom: 3.5%;
-	height: 20px;
-	padding-left: 1%;
-}
-
-#submit{
-	background-color: #FFC626;
-	font-weight: bold;
-	font-size: 1.3em;
-}
-
-#features{
-	margin-top: -1%;
-	text-align: center;
-}
-
-h3{
-	font-size: 1.6em;
-	margin-top: 13%;
-}
-
-p{
-	padding: 1%;
-	font-size: 1.2em;
-}
-
-#video{
-	margin-top:20%;
-	height: 80%;
-	width: 100%;
-}
-
-iframe{
-	width: 100%;
-	height: 150%;
-	text-align: center;
-}
-
-#pricing{
-	margin-top: 35%;
-}
-
-#tenor_trombone,#bass_trombone,#valve_trombone{
-	border: 1px solid black;
-}
-
-@media (max-width: 350px) {
-    {
-      #header{
-      }
-      #header-img{
-      	max-width: 300px;
-      }
-      
-    }
-  }*/
